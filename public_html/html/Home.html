@@ -1,0 +1,424 @@
+<html>
+<head>
+<title>Home</title>
+<link type="text/css" rel="Stylesheet" href="../css/css.css"/>
+<link type="text/css" rel="Stylesheet" href="../css/Home.css"/>
+<link rel="stylesheet" href="  ../css/index.css">
+ <script src="  ../js/jquery.min.js"></script>
+  <script src="  ../js/popper.min.js"></script>
+  <script src="  ../js/bootstrap.min.js"></script>
+  <script src="  ../js/1.js"></script>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: gray;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: grey;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Caption text */
+
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 100%) {
+  .text {font-size: 11px}
+}
+
+
+
+
+</style>
+<body bgcolor=gray>
+
+<div class="row" class="home">
+
+       <div class="col-sm-3" >
+          <img src="../images/10.png" style=" height: 23vh; width: 23vh; padding: 10px; " class="responsive">
+    </div>
+ 
+      <div class="col-sm-9" style="padding-top: 50px;" >
+        <img src="../images/title.png" class="responsive" >
+
+      </div> 
+  </div>
+
+
+<!--=========================================     Curtain Navbar       ======================================================-->  
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="../html/Home.html">Home</a>
+    <a href="../html/About.html">About</a>
+    <a href="#">Services</a>
+    <a href="../index.php">Reservation</a>
+    <a href="../html/registration.php">Register</a>
+    <a href="../html/contact.html">Contact</a>
+  </div>
+</div>
+<br>
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+
+
+<!--=========================================   Slideshow     ======================================================--> 
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../images/1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../images/2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../images/3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../images/Home.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../images/5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div class="row" class="home">
+
+        <img src="../images/Gallery.png" class="responsive" style="width: 100%" >
+
+  </div>
+  
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+  
+  <!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="../images/img/1.jpg" style="width:100%">
+    <img src="../images/img/2.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+    <img src="../images/img/3.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+
+    
+  </div>
+  <div class="column">
+         <img src="../images/img/4.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="../images/img/5.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="../images/img/6.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+  </div>  
+  <div class="column">
+     <img src="../images/img/7.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="../images/img/8.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="../images/img/9.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+  </div>
+ 
+  <div class="column">
+      <img src="../images/img/10.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="../images/img/11.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="../images/img/12.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+    </div>
+</div>
+    <div class="row">
+        <div class="col-sm-3" ><img src="../images/img/13.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A boy surrounded by beautiful nature"></div>
+      <div class="col-sm-3" ><img src="../images/img/14.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A girl, and a train passing"></div>
+      <div class="col-sm-3" ><img src="../images/img/15.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful"></div>
+      <div class="col-sm-3" ><img src="../images/img/22.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3" >
+        <img src="../images/img/16.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/17.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A girl, and a train passing">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/18.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/23.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3" >
+        <img src="../images/img/19.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/20.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="A girl, and a train passing">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/21.jpg" style="width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+      <div class="col-sm-3" >
+        <img src="../images/img/24.jpg" style=" width:100%; padding-top: 10px;" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      </div>
+
+    </div>
+
+
+
+<div class="container-fluid">
+ 
+  <div class="row" >
+
+      <div class="col-sm-2" style="background-color: #0f53c4; color: white;"> <br ><br><center><h3 >&nbsp</h3></center><img src="../images/11.jpg" width="210" height="180"></div>
+    <div class="col-sm-4" style="background-color: #0f53c4; color: white;"> <br ><br><br><br><h3 >About GRAPHIC ERA</h3>
+     Graphic Era (Deemed to be University) formerly Graphic Era Institute of Technology is an institute of higher education Deemed to be University located in Clement Town, Dehradun, Uttarakhand, India. The university was founded as 'Graphic Era Institute of Technology' in 1993 and in 2008 it has accorded with the status of Deemed to be University. <br><br><br>
+    </div>
+    
+    <div class="col-sm-3" style="background-color: #0e4db5; color: #fcf7f7;">
+      <!-- Add font awesome icons -->
+<br><h4>&nbsp&nbsp<strong>Contact Us</strong></h4>
+&nbsp&nbsp&nbsp
+<a href="https://www.facebook.com/gehu.official/" class="fa fa-facebook"> </a>Graphic Era <br>
+
+&nbsp&nbsp&nbsp
+<a href="https://www.linkedin.com/company/graphic-era-hilluniversity" class="fa fa-linkedin"></a>Graphic Era Alumni Association<br>
+&nbsp&nbsp&nbsp
+<a href="https://www.youtube.com/user/GEHUDehradun" class="fa fa-youtube"></a>Graphic Era University<br>
+&nbsp&nbsp&nbsp
+<a href="https://www.instagram.com/graphicerahilluniversity/" class="fa fa-instagram"></a>geuofficial<br>
+
+      
+      
+  </div>
+
+    <div class="col-sm-3" style="background-color: #0e4db5; color: #f9f4f4;">
+      <br>
+      <h5 style=" color: #fcf7f7;"><strong>Graphic Era University</strong></h5><br>
+    <h6>566/6, Bell Road,<br>
+    Clement Town Dehradun,<br>
+    Uttarakhand India -248002</h6>
+    <h6 style=" color: #fcf7f7; text-decoration: none;">Phone +91-135-2643420, 2642727<br>
+      <br>alumni@geu.ac.in
+ 
+<br>
+
+      enquiry@geu.ac.in<br></h6>
+
+      Fax 91-135-2644025</br>
+    </div>
+  
+  </div>
+
+  <div class="row" >
+    <div class="col-sm-12" style="background-color: #0644a8; color: white;"> <center><br><i style="font-size:24px" class="fa">&#xf1f9;</i> COPYRIGHT 2018| Bus Reservation Graphic Era<br>&nbsp </center></div>
+     
+ </div>
+
+</div>
+
+
+</body>
+</html>
